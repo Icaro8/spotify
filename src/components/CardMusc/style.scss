@@ -1,0 +1,64 @@
+.cardsInfo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+  .svgContent {
+    background: linear-gradient(10deg, #7e57c2, #7e57c2, #d1c4e9);
+    padding: 17px;
+    height: 100%;
+    width: 80px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    height: 100%;
+    img {
+      width: 80px;
+      height: 100%;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    svg {
+      color: #fff;
+      height: 35px;
+      width: 35px;
+    }
+    &:last-child {
+      position: relative;
+      width: 300px;
+      height: 100%;
+      background-color: rgb(36, 35, 35);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      h3 {
+        color: #fff;
+      }
+    }
+    &:last-child:hover {
+      background-color: rgb(49, 48, 48);
+      cursor: pointer;
+    }
+    &:last-child:hover ::after {
+      content: "▶";
+      font-size: 16px;
+      padding: 6px;
+      color: #fff;
+      background-color: var(--first_green);
+      border-radius: 50%;
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      transition: 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

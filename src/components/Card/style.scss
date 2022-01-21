@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(50deg, #000, rgba(0, 0, 0, 0.3));
+  align-items: center;
+  padding: 50px;
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 50px;
+    img {
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .ContentDescription {
+    .ContentTitle {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      div {
+        strong {
+          color: #fff;
+          font-family: "Montserrat", sans-serif;
+          text-transform: uppercase;
+        }
+      }
+      .absolute {
+        display: flex;
+        position: absolute;
+        color: rgb(126, 122, 122);
+        background-color: #000;
+        opacity: 0.3;
+        right: 10px;
+        top: 20px;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      div {
+        h1 {
+          font-size: 80px;
+          color: #fff;
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.mediaControler {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  div {
+    svg {
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+
+      filter: brightness(0.8);
+
+      &:hover {
+        filter: brightness(1);
+      }
+    }
+  }
+  .play {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      color: #000;
+    }
+  }
+}

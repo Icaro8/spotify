@@ -1,0 +1,36 @@
+.contianerUserICons {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  .svgContainer {
+    padding: 10px;
+    background-color: rgb(71, 69, 69);
+    border-radius: 50%;
+
+    svg {
+      width: 25px;
+      height: 25px;
+      color: #eee;
+    }
+  }
+  .columns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    .maxwidth {
+      width: 60%;
+      height: 5px;
+      background-color: rgb(71, 69, 69);
+      border-radius: 10px;
+    }
+    .minwidth {
+      width: 40%;
+      height: 5px;
+      background-color: rgb(71, 69, 69);
+      border-radius: 10px;
+    }
+  }
+}

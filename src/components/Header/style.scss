@@ -1,0 +1,38 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #311b92;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 30px;
+  .svg {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .rowInfos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    .backgroundBlack {
+      background-color: #000;
+      color: #fff;
+      padding: 4px 20px;
+      border-radius: 20px;
+      border: 1px solid #fff;
+
+      letter-spacing: 1px;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+    }
+  }
+}

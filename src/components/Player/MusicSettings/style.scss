@@ -1,0 +1,42 @@
+.flexMusic {
+  display: flex;
+
+  gap: 10px;
+
+  div {
+    svg {
+      color: #fff;
+      width: 18px;
+      height: 18px;
+      filter: brightness(0.7);
+
+      &:hover {
+        filter: brightness(1);
+      }
+    }
+  }
+  .contentAudio {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    .progressive {
+      width: 100px;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 10px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 70%;
+        background-color: rgb(128, 125, 125);
+      }
+      &:hover::before {
+        background-color: var(--first_green);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.containerContent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  .rowContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+
+    transition: filter 0.2s;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(0.8);
+    }
+    .addPlay {
+      background: #fff;
+      padding: 3px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      svg {
+        color: #000;
+      }
+    }
+
+    .liked {
+      background: linear-gradient(20deg, #9575cd, #fff);
+      padding: 3px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+    }
+
+    .podcast {
+      background-color: #43a047;
+      padding: 1px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      svg {
+        color: #00e676;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

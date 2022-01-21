@@ -1,0 +1,25 @@
+.flexProgressive {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  .progressiveBar {
+    position: relative;
+    width: 350px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgba(117, 116, 116, 0.867);
+    &::before {
+      position: absolute;
+      background-color: #fff;
+      width: 80%;
+      height: 100%;
+      content: "";
+    }
+  }
+  div {
+    span {
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}

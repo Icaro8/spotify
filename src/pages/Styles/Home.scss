@@ -1,0 +1,115 @@
+.ContainerPage {
+  display: grid;
+  grid-template-columns: 220px 1fr 250px;
+  background-color: var(--background_black);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .separator {
+      &::after {
+        width: 150px;
+        height: 3px;
+        background-color: rgb(63, 62, 62);
+        content: "";
+        display: block;
+        margin: 2px auto;
+        border-radius: 10px;
+      }
+    }
+    .scroll {
+      height: 150px;
+      overflow-y: scroll;
+      flex-grow: 1;
+
+      &::-webkit-scrollbar {
+        background-color: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #b0bec5;
+      }
+    }
+  }
+  .contentCenter {
+    position: relative;
+    overflow-y: scroll;
+    h2 {
+      color: #fff;
+      padding: 30px;
+      font-size: 30px;
+      font-family: "Montserrat";
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    .cardContent {
+      background-color: #311b92;
+      padding: 0px 10px;
+    }
+    .cardsPlaylist {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+      .cardsSection {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        gap: 40px;
+        padding: 30px;
+        flex-wrap: wrap;
+        font-family: "Montserrat";
+      }
+      .rowProgams {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        h3 {
+          color: #fff;
+          font-size: 30px;
+          font-family: "Montserrat";
+        }
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-family: "Montserrat";
+          font-size: 16px;
+        }
+      }
+      .sectionCast {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+    }
+  }
+  .leftBar {
+    display: flex;
+    flex-direction: column;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #212121;
+    box-shadow: 0 0 2px #eee;
+    padding: 10px 20px;
+  }
+}

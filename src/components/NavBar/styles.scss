@@ -1,0 +1,18 @@
+.container {
+  .navigation {
+    .container-content {
+      color: #fff;
+      padding: 5px;
+      margin-left: 10px;
+      svg {
+        width: 35px;
+        height: 35px;
+
+        transition: filter 0.2s;
+        &:hover {
+          filter: brightness(0.7);
+        }
+      }
+    }
+  }
+}

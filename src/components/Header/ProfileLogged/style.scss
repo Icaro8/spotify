@@ -1,0 +1,33 @@
+.flexRow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  width: 120px;
+  .image {
+    width: 30px;
+    height: 30px;
+    display: flex;
+
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .svgHeader {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: rgb(48, 47, 47);
+  }
+}
