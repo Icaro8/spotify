@@ -22,3 +22,10 @@
 ## Para rodar o projeto
 
 > yarn start
+
+### Imagens  do projeto
+
+![spotify](https://user-images.githubusercontent.com/86238635/158062186-3c75ac89-c15c-400e-b619-acfb54ae3285.png)
+###
+![spotify2](https://user-images.githubusercontent.com/86238635/158062193-52e408e6-d217-4c29-bce1-3a586b8e5d53.png)
+
